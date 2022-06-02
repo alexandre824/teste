@@ -1,0 +1,281 @@
+<!-- Formulario de adicionar novo cadastro -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>Projeto 1 - Resenha Filme</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="Use this HTML basic website three percentage column layout template with the main content on the left, the navigation menu at the center, the extra stuff on the right.">
+    <meta name="generator" content="HAPedit 3.1">
+    <link rel="canonical" href="https://www.w3docs.com/snippets/html/layout_templates/03.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HTML FlexBox Template - Three percentage columns, left content" />
+    <meta property="og:description" content="Use this HTML basic website three percentage column layout template with the main content on the left, the navigation menu at the center, the extra stuff on the right." />
+    <meta property="og:image" content="https://www.w3docs.com/build/images/logo-amp.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="192" />
+    <meta property="og:image:height" content="192" />
+    <meta property="og:image:alt" content="W3dcos" />
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #292929;
+            font: 90% Roboto, Arial, sans-serif;
+            font-weight: 300;
+        }
+
+        p {
+            padding: 0 10px;
+            line-height: 1.8;
+        }
+
+        ul li {
+            padding-right: 10px;
+            line-height: 1.6;
+        }
+
+        h3 {
+            padding: 5px 20px;
+            margin: 0;
+        }
+
+        div#header {
+            position: relative;
+        }
+
+        div#header h1 {
+            height: 80px;
+            line-height: 80px;
+            margin: 0;
+            padding-left: 10px;
+            background: #e0e0e0;
+            color: #292929;
+        }
+
+        div#header a {
+            position: absolute;
+            right: 0;
+            top: 23px;
+            padding: 10px;
+            color: #006;
+        }
+
+        div#navigation {
+            background: #7cb71c;
+        }
+
+        div#navigation li {
+            list-style: none;
+        }
+
+        div#extra {
+            background: #147FA9;
+        }
+
+        div#footer {
+            background: #42444e;
+            color: #fff;
+        }
+
+        div#footer p {
+            padding: 20px 10px;
+        }
+
+        div#wrapper {
+            float: left;
+            width: 100%;
+        }
+
+        div#content {
+            margin-right: 50%;
+        }
+
+        div#navigation {
+            float: left;
+            width: 25%;
+            margin-left: -50%;
+        }
+
+        div#extra {
+            float: left;
+            width: 25%;
+            margin-left: -25%;
+        }
+
+        div#footer {
+            clear: left;
+            width: 100%;
+        }
+		      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      margin: 15px 0;
+      font-weight: 400;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input:hover, select:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #a9a9a9;
+      }
+      .item i {
+      right: 2%;
+      top: 30px;
+      z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #0666a3;
+      }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Projeto 1</h1>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <h1>Publicar Resenha Filme</h1>
+        <div class="item">
+          <p>Autor</p>
+          <div>
+            <input type="text" name="name" placeholder="Nome" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Nome do Filme/Série/Documentário</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>Data da publicação</p>
+          <input type="date" name="name" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Categoria</p>
+          <select>
+            <option value="">*Por favor, selecione uma*</option>
+            <option value="A">Comedia</option>
+            <option value="B">Drama</option>
+            <option value="C">Terror</option>
+            <option value="D">Ação</option>
+            <option value="E">Documentário</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Link Imagem</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item">
+          <p>Resenha</p>
+          <textarea rows="5"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Publicar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+        </div>
+    </div>
+    <div id="navigation">
+        <p><strong>2. Menu</strong></p>
+        <h3>Links</h3>
+        <ul>
+            <li>Home</li>
+            <li>Alterar publicação</li>
+            <li>Remover Publicação</li>
+            <li>Listar</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+    
+    <div id="footer"><p>Roda pé</p>
+    </div>
+</div>
+<script type="text/javascript">AddFillerLink("content", "navigation", "extra")</script>
+</body>
+</html>

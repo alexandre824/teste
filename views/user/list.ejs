@@ -1,0 +1,47 @@
+<!-- Listagem -->
+
+<%- include ../layouts/header.ejs %>
+
+<% if (messages.error) { %>
+	<p style="color:red"><%- messages.error %></p>
+<% } %>
+
+<% if (messages.success) { %>
+	<p style="color:green"><%- messages.success %></p>
+<% } %>	
+
+<table width='80%' border=0>
+
+	<tr style='text-align:left; background-color:#CCC'>
+		<th>ID</th>
+		<th>Nome</th>
+		<th>texto</th>
+		<th>ano</th>
+		<th>EDITORES</th>
+	</tr>
+	
+<!-- Loop dados -->
+
+	<% if (data) { %>
+	<% data.forEach(function(user){ %>
+		<tr>
+			<td><%= user.id %></td>
+			<td><%= user.nome %></td>
+			<td><%= user.texto %></td>
+			<td><%= user.ano %></td>
+			<td>
+				<div style="float:left">
+					<a href='/local/edit/<%= user.id %>'>Editar</a> &nbsp;							
+					<form method="post" action="/local/delete/<%= user.id %>" style="float:right">
+						<input type="submit" name="delete" value='Delete' onClick="return confirm('Você tem certeza que deseja deletar?')" />
+						<input type="hidden" name="_method" value="DELETE" />
+					</form>
+				</div>
+			</td>
+		</tr>
+	<% }) %>
+	<% } %>
+
+</table>
+
+<%- include ../layouts/footer.ejs %>

@@ -1,0 +1,51 @@
+<!-- Formulario de edição de cadastro -->
+
+
+<%- include ../layouts/header.ejs %>	
+		
+<% if (messages.error) { %>
+	<p style="color:red"><%- messages.error %></p>
+<% } %>
+
+<% if (messages.success) { %>
+	<p style="color:green"><%- messages.success %></p>
+<% } %>
+
+<form action="/local/edit/<%= id %>" method="post" name="form1">
+	<table width="25%" border="0">
+		<tr> 
+			<td>Nome</td>
+			<td><input type="text" name="nome" id="nome" value="<%= nome %>" /></td>
+		</tr>
+		<tr> 
+			<td>Rua</td>
+			<td><input type="text" name="rua" value="<%= rua %>" /></td>
+		</tr>
+		<tr> 
+			<td>bairro</td>
+			<td><input type="text" name="bairro" value="<%= bairro %>" /></td>
+		</tr>
+		<tr> 
+			<td>cidade</td>
+			<td><input type="text" name="cidade" value="<%= cidade %>" /></td>
+		</tr>
+		<tr> 
+			<td>Data de inauguração</td>
+			<td><input type="text" name="data_de_inauguracao" value="<%= data_de_inauguracao %>" /></td>
+		</tr>
+		<tr> 
+			<td>Horario</td>
+			<td><input type="text" name="timestamp" value="<%= timestamp %>" /></td>
+		</tr>
+		<tr> 
+			<td></td>
+			<td><input type="submit" name="Submit" value="Edit" /></td>
+		</tr>
+	</table>
+	<input type="hidden" name="_method" value="PUT" />
+</form>
+
+<!--
+including footer content which is common for all pages
+-->
+<%- include ../layouts/footer.ejs %>
