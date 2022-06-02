@@ -1,0 +1,31 @@
+{
+  "name": "museu",
+  "version": "1.0.0",
+  "description": "Exemplo para aprendizado do Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "crud",
+    "mysql"
+  ],
+  "author": "André L. Bordignon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^2.7.4",
+    "express": "^4.15.3",
+    "express-flash": "0.0.2",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.17.2",
+    "express-validator": "^3.2.1",
+    "method-override": "^2.3.10",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
